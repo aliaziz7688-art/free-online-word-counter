@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Blog — WordTools Pro | Writing & SEO Guides</title>
+<meta name="description" content="Free guides for writers, bloggers and SEO professionals. Word count tips, resume advice, social media character limits and more."/>
+<link rel="canonical" href="https://aliaziz7688-art.github.io/free-online-word-counter/blog.html"/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{--bg:#f8f9fc;--white:#fff;--ink:#0f1117;--ink2:#4b5263;--ink3:#9ba3b4;--border:#e4e7ef;--accent:#2d6ef5;--accent-bg:#eef3ff;}
+body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--ink);}
+a{text-decoration:none;color:inherit;}
+
+header{background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;}
+.hi{max-width:1100px;margin:0 auto;padding:0 24px;height:64px;display:flex;align-items:center;gap:16px;}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.1rem;}
+.logo-icon{width:34px;height:34px;background:var(--accent);border-radius:9px;display:flex;align-items:center;justify-content:center;color:white;font-weight:900;}
+.logo span{color:var(--accent);}
+nav{display:flex;gap:4px;margin-left:auto;}
+nav a{padding:7px 13px;border-radius:8px;font-size:0.875rem;font-weight:500;color:var(--ink2);transition:all .15s;}
+nav a:hover{background:var(--bg);}
+nav a.active{background:var(--accent-bg);color:var(--accent);font-weight:600;}
+
+.page-hero{background:var(--white);border-bottom:1px solid var(--border);padding:48px 24px;}
+.page-hero-inner{max-width:700px;margin:0 auto;text-align:center;}
+.page-hero h1{font-size:2.2rem;font-weight:900;letter-spacing:-1px;margin-bottom:10px;}
+.page-hero p{color:var(--ink2);font-size:1rem;}
+
+.main{max-width:1100px;margin:0 auto;padding:40px 24px 80px;}
+
+.filter-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px;}
+.fbtn{padding:7px 16px;border-radius:100px;font-size:0.82rem;font-weight:600;border:1px solid var(--border);background:var(--white);color:var(--ink2);cursor:pointer;transition:all .15s;}
+.fbtn:hover,.fbtn.on{background:var(--accent);color:white;border-color:var(--accent);}
+
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px;}
+.blog-card{background:var(--white);border:1px solid var(--border);border-radius:14px;overflow:hidden;transition:all .2s;display:flex;flex-direction:column;}
+.blog-card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.08);}
+.bimg{height:150px;display:flex;align-items:center;justify-content:center;font-size:2.8rem;}
+.bbody{padding:20px;flex:1;display:flex;flex-direction:column;}
+.bcat{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--accent);margin-bottom:8px;}
+.blog-card h2{font-size:1rem;font-weight:700;line-height:1.4;margin-bottom:8px;}
+.blog-card p{font-size:0.83rem;color:var(--ink2);line-height:1.55;flex:1;margin-bottom:14px;}
+.bmeta{font-size:0.75rem;color:var(--ink3);display:flex;gap:8px;align-items:center;}
+.bread{margin-top:auto;display:inline-flex;align-items:center;gap:4px;font-size:0.82rem;font-weight:600;color:var(--accent);}
+
+footer{background:#0f1117;color:rgba(255,255,255,0.5);text-align:center;padding:24px;font-size:0.8rem;}
+footer a{color:rgba(255,255,255,0.5);margin:0 8px;}
+
+@media(max-width:640px){nav{display:none;}.main{padding:28px 14px 60px;}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hi">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">W</div>
+      Word<span>Tools</span> Pro
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tools.html">Tools</a>
+      <a href="blog.html" class="active">Blog</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <h1>Writing & SEO Blog</h1>
+    <p>Guides for writers, bloggers, students and SEO professionals</p>
+  </div>
+</div>
+
+<main class="main">
+
+  <div class="filter-row">
+    <button class="fbtn on" onclick="filter('all',this)">All Articles</button>
+    <button class="fbtn" onclick="filter('seo',this)">SEO</button>
+    <button class="fbtn" onclick="filter('writing',this)">Writing</button>
+    <button class="fbtn" onclick="filter('social',this)">Social Media</button>
+    <button class="fbtn" onclick="filter('career',this)">Career</button>
+  </div>
+
+  <div class="blog-grid" id="blogGrid">
+
+    <a href="blog/ideal-word-count.html" class="blog-card" data-cat="seo">
+      <div class="bimg" style="background:#eef3ff;">📊</div>
+      <div class="bbody">
+        <div class="bcat">SEO Guide</div>
+        <h2>Ideal Word Count for Blog Posts in 2026</h2>
+        <p>How long should your blog post be? We break down the ideal word count for every type of content to rank on Google.</p>
+        <div class="bmeta"><span>5 min read</span>·<span>Jan 2026</span></div>
+        <span class="bread">Read article →</span>
+      </div>
+    </a>
+
+    <a href="blog/resume-word-count.html" class="blog-card" data-cat="career">
+      <div class="bimg" style="background:#e6faf4;">📄</div>
+      <div class="bbody">
+        <div class="bcat">Career Tips</div>
+        <h2>How Many Words Should a Resume Be?</h2>
+        <p>One page or two? We answer the most common resume length question with data and expert advice.</p>
+        <div class="bmeta"><span>4 min read</span>·<span>Feb 2026</span></div>
+        <span class="bread">Read article →</span>
+      </div>
+    </a>
+
+    <a href="blog/twitter-character-limit.html" class="blog-card" data-cat="social">
+      <div class="bimg" style="background:#f3eeff;">🐦</div>
+      <div class="bbody">
+        <div class="bcat">Social Media</div>
+        <h2>Twitter/X Character Limit Complete Guide 2026</h2>
+        <p>Everything about character limits on Twitter, Instagram, Facebook, LinkedIn and TikTok.</p>
+        <div class="bmeta"><span>3 min read</span>·<span>Mar 2026</span></div>
+        <span class="bread">Read article →</span>
+      </div>
+    </a>
+
+    <a href="blog/college-essay-word-count.html" class="blog-card" data-cat="writing">
+      <div class="bimg" style="background:#fff0f0;">🎓</div>
+      <div class="bbody">
+        <div class="bcat">Writing Tips</div>
+        <h2>College Essay Word Count — Complete Guide</h2>
+        <p>Common App, supplemental essays, scholarship applications — exact word limits and tips to hit them.</p>
+        <div class="bmeta"><span>5 min read</span>·<span>Apr 2026</span></div>
+        <span class="bread">Read article →</span>
+      </div>
+    </a>
+
+    <a href="blog/seo-content-length.html" class="blog-card" data-cat="seo">
+      <div class="bimg" style="background:#fff3eb;">🔍</div>
+      <div class="bbody">
+        <div class="bcat">SEO Strategy</div>
+        <h2>Does Content Length Affect Google Rankings?</h2>
+        <p>We analyze the data behind content length and SEO performance. What does Google really want?</p>
+        <div class="bmeta"><span>6 min read</span>·<span>May 2026</span></div>
+        <span class="bread">Read article →</span>
+      </div>
+    </a>
+
+    <a href="blog/meta-description-length.html" class="blog-card" data-cat="seo">
+      <div class="bimg" style="background:#eef3ff;">🏷️</div>
+      <div class="bbody">
+        <div class="bcat">SEO Guide</div>
+        <h2>Perfect Meta Description Length for SEO</h2>
+        <p>How many characters should your meta description be? The definitive answer with examples.</p>
+        <div class="bmeta"><span>3 min read</span>·<span>May 2026</span></div>
+        <span class="bread">Read article →</span>
+      </div>
+    </a>
+
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 WordTools Pro &nbsp;|&nbsp; <a href="index.html">Home</a> <a href="tools.html">Tools</a> <a href="privacy.html">Privacy</a></p>
+</footer>
+
+<script>
+function filter(cat,btn){
+  document.querySelectorAll('.fbtn').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  document.querySelectorAll('.blog-card').forEach(c=>{
+    c.style.display=(cat==='all'||c.dataset.cat===cat)?'flex':'none';
+  });
+}
+</script>
+</body>
+</html>
